@@ -15,8 +15,6 @@ function displayPlayer(players){
 function selectToAdd(element){
 
     const playerName = element.parentNode.parentNode.children[0].innerText;
-    
-
     playerArr.push(playerName);
     const playerNumber = playerArr.length;
     if(playerNumber > 5){
@@ -47,10 +45,7 @@ document.getElementById('btn-calculate-total').addEventListener('click', functio
     const playerExpenses = getElementValueById('player-expense');
     const managerCost = getFieldvalueById('cost-manager');
     const coachCost = getFieldvalueById('cost-coach');
-    if(managerCost === 'failed' || coachCost === 'failed'){
-        return;
-    }
-    else if(playerExpenses === 'failed'){
+    if(managerCost === 'failed' || coachCost === 'failed' || playerExpenses === 'failed'){
         return;
     }
     else{
@@ -58,6 +53,4 @@ document.getElementById('btn-calculate-total').addEventListener('click', functio
         setElementById('total-expense', totalExpense);
 
     }
-    
-
-})
+});
