@@ -35,3 +35,12 @@ document.getElementById('btn-calculate').addEventListener('click', function(){
     const playerExpense = perPlayerCost * playerNumber;
     setElementById('player-expense', playerExpense);
 });
+
+document.getElementById('btn-calculate-total').addEventListener('click', function(){
+    const playerExpenses = getElementValueById('player-expense');
+    const managerCost = getFieldvalueById('cost-manager');
+    const coachCost = getFieldvalueById('cost-coach');
+    const totalExpense = playerExpenses + managerCost + coachCost ;
+    setElementById('total-expense', totalExpense);
+
+})

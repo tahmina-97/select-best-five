@@ -5,7 +5,7 @@ function getFieldvalueById(inputId){
 }
 function getElementValueById(elementId){
     const getElement = document.getElementById(elementId);
-    const getElementValue = parseFloat(getElement.value);
+    const getElementValue = parseFloat(getElement.innerText);
     return getElementValue;
 }
 
