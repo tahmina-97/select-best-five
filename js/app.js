@@ -26,6 +26,7 @@ function selectToAdd(element){
     else{
         element.classList.add('btn-disabled');
     }
+    document.getElementById('players-number').innerText = playerArr.length;
     displayPlayer(playerArr);
 }
 
