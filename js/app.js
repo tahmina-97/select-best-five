@@ -29,14 +29,16 @@ function selectToAdd(element){
 
 document.getElementById('btn-calculate').addEventListener('click', function(){
     const perPlayerCost = getFieldvalueById('cost-per-player');
+    const playerNumber = document.getElementById('list-items').childElementCount;
     if(perPlayerCost === 'failed'){
         return;
     }
+    else if(playerNumber === 0){
+        alert('You have select atleast 1 player');
+    }
     else{
-        const playerNumber = document.getElementById('list-items').childElementCount;
         const playerExpense = perPlayerCost * playerNumber;
         setElementById('player-expense', playerExpense);
-
     }
     
 });
