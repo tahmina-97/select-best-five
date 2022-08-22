@@ -13,31 +13,32 @@
     <title>Choose Players</title>
     <style>
         .height{
-            height: 450px;
+            height: 475px;
         }
-       
-       
     </style>
 </head>
 <body>
+  <!-- header section starts  -->
     <header class="">
         <div class="grid grid-cols-5 bg-black">
             <div class="-mb-5">
                 <img src="images/banner-player.png" alt="">
             </div>
             <div class="col-span-3 flex flex-col h-full items-center justify-center">
-                <h1 class="text-sky-600 text-7xl font-medium text-center">Choose Your Dream Players</h1>
-                <p class="text-white text-center py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nesciunt ut temporibus cum repellendus officiis magnam voluptatibus quo voluptas quam doloremque ea dolores itaque, nostrum ipsa impedit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, voluptate. </p>
+                <h1 class="text-primary text-7xl font-medium text-center">Paris Saint-Germain F.C.</h1>
+                <p class="text-white text-center py-5">Paris Saint-Germain Football Club, commonly referred to as Paris Saint-Germain, Paris, Paris SG or simply PSG is a professional football club based in Paris, France. They compete in Ligue 1, the top division of French football. </p>
             </div>
             <div class="my-auto ml-10">
                 <img class="shadow-gray-500/40 shadow-lg" src="images/psg-logo.png" alt="">
             </div>
         </div>
     </header>
+    <!-- header section ends  -->
 
     <main>
+      <!-- players section html -->
         <section class="bg-gray-900">
-            <div class="container mx-auto p-12">
+            <div class="container mx-auto py-20">
                 <div class="grid grid-cols-4 gap-4">
                     <!-- players information  -->
                     <div class="col-span-3">
@@ -108,7 +109,8 @@
                                     <button onclick="selectToAdd(this)" class="btn btn-primary px-24 rounded-none text-white font-semibold" >SELECT</button> 
                                   </div>
                                 </div>
-                              </div>
+                            </div>
+                             
                            
                         </div>
                     </div>
@@ -133,7 +135,7 @@
                                 <h5 class="font-semibold p-4 mb-2">Per Player: <input id="cost-per-player" class="float-right w-1/2 border border-white bg-slate-800  py-1 px-2 mx-2" type="text"></h5>
 
                                 <div class="card-actions justify-center">
-                                    <button id="btn-calculate" class=" bg-blue-800 hover:bg-blue-600 px-24 py-1 text-white font-semibold" >Calculate</button>
+                                    <button id="btn-calculate" class="btn btn-primary w-5/6 mx-auto rounded-none text-white font-semibold" " >Calculate</button>
                                 </div>
 
                                 <h3 class="m-2 text-center font-medium">Player Expenses: &nbsp; $<span id="player-expense"></span> </h3>
@@ -142,7 +144,7 @@
                                 <h5 class="font-semibold p-4">Manager: <input id="cost-manager" class="float-right w-1/2 border border-white bg-slate-800  py-1 px-2 mx-2" type="text"></h5>
                                 <h5 class="font-semibold p-4 mb-2">Coach: <input id="cost-coach" class="float-right   w-1/2 border border-white bg-slate-800  py-1 px-2 mx-2" type="text"></h5>
                                 <div class="card-actions justify-center">
-                                    <button id="btn-calculate-total" class=" bg-blue-800 hover:bg-blue-600 px-16 py-1 text-white font-semibold" >Calculate Total</button>
+                                    <button id="btn-calculate-total" class=" btn btn-primary w-5/6 mx-auto rounded-none text-white font-semibold" >Calculate Total</button>
                                 </div>
 
                                 <h3 class="m-2 text-center font-medium">Total: &nbsp;  <span class="text-orange-500 text-xl">$<span id="total-expense" ></span></span> </h3>
@@ -160,6 +162,8 @@
         
     </main>
     <div class="divider bg-gray-900 m-0"></div> 
+
+    <!-- footer section html -->
     <footer class="footer p-10 bg-gray-900 text-neutral-content">
         <div>
           <svg width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" class="fill-current"><path d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"></path></svg>

@@ -1,6 +1,6 @@
-
 const playerArr = [];
 
+// display the selected players
 function displayPlayer(players){
     const listBody = document.getElementById('list-items');
     listBody.innerHTML= '';
@@ -12,8 +12,10 @@ function displayPlayer(players){
     }
 }
 
-function selectToAdd(element){
 
+// when select buttons clicked
+
+function selectToAdd(element){
     const playerName = element.parentNode.parentNode.children[0].innerText;
     playerArr.push(playerName);
     const playerNumber = playerArr.length;
@@ -26,6 +28,9 @@ function selectToAdd(element){
     }
     displayPlayer(playerArr);
 }
+
+
+// when calculate button clicked
 
 document.getElementById('btn-calculate').addEventListener('click', function(){
     const perPlayerCost = getFieldvalueById('cost-per-player');
@@ -42,6 +47,9 @@ document.getElementById('btn-calculate').addEventListener('click', function(){
     }
     
 });
+
+
+//when calculate total button clicked 
 
 document.getElementById('btn-calculate-total').addEventListener('click', function(){
     const playerExpenses = getElementValueById('player-expense');
