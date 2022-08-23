@@ -40,7 +40,7 @@ document.getElementById('btn-calculate').addEventListener('click', function(){
         return;
     }
     else if(playerNumber === 0){
-        alert('You have select atleast 1 player');
+        alert('You have to select atleast 1 player');
     }
     else{
         const playerExpense = perPlayerCost * playerNumber;
